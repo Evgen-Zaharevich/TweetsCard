@@ -9,3 +9,10 @@ export const BackLink = styled(NavLink)`
     color: red;
   }
 `;
+
+export const CardList = styled.ul`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+`;
