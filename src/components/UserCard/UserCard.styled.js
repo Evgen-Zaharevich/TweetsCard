@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const CardContainer = styled.div`
-  /* position: absolute; */
   width: 380px;
   height: 460px;
   background-image: linear-gradient(
@@ -29,9 +28,6 @@ export const LogoGoIt = styled.img`
   position: relative;
   bottom: -20px;
   left: 20px;
-  /* margin-left: 20px;
-  margin-top: 20px; */
-  z-index: 99;
 `;
 
 export const CardTop = styled.div`
@@ -94,6 +90,26 @@ export const Button = styled.button`
 
   margin-bottom: 36px;
   margin-top: 26px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+`;
+
+export const ButtonActive = styled.button`
+  width: 196px;
+  height: 50px;
+  background-color: #5cd3a8;
+  border: none;
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+  margin-bottom: 36px;
+  margin-top: 26px;
+
+  cursor: pointer;
 
   font-weight: 600;
   font-size: 18px;

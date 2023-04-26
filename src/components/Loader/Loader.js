@@ -4,7 +4,7 @@ export const Loader = () => {
   return (
     <div
       style={{
-        justifySelf: 'center',
+        textAlign: 'center',
       }}
     >
       <ColorRing

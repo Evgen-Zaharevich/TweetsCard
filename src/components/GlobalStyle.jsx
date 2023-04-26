@@ -28,7 +28,6 @@ export const GlobalStyle = createGlobalStyle`
   
   img {
   display: block;
-  /* width: 100%; */
   height: auto;
 }
 
