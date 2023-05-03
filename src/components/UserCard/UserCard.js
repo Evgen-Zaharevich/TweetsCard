@@ -1,6 +1,6 @@
 import questionImg from '../../image/picture2 1.png';
 import logoImg from '../../image/Logo.png';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { updateUser } from 'components/api/api';
 
 import {
@@ -33,15 +33,7 @@ export const UserCard = ({ tweets, followers, avatar, id, statusFollowed }) => {
     }
   };
 
-  useEffect(() => {
-    const abortController = new AbortController();
-
-    updateUser(id, status, String(followerValue), abortController);
-
-    return () => {
-      abortController.abort();
-    };
-  }, [followerValue, id, status]);
+  updateUser(id, status, String(followerValue));
 
   const dottedNumber = value => {
     const parts = value.toString().split('.');

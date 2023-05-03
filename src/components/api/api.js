@@ -13,17 +13,11 @@ export const FetchUsers = async (page, abortController) => {
   return response;
 };
 
-export const updateUser = async (
-  id,
-  statusFollowed,
-  followers,
-  abortController
-) => {
+export const updateUser = async (id, statusFollowed, followers) => {
   try {
     const { data } = await axios.put(`/user/${id}`, {
       followers: followers,
       statusFollowed: statusFollowed,
-      signal: abortController.signal,
     });
     return data;
   } catch (e) {
